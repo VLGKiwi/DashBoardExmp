@@ -5,9 +5,10 @@ interface WidgetProps {
 	onRemove: () => void;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Widget = ({ id, name, isEditing, onRemove }: WidgetProps) => {
 	return (
-		<div className="h-full w-full bg-white rounded-lg shadow-sm border border-gray-200 p-4 relative">
+		<div className="h-full w-full bg-white rounded-lg shadow-sm border border-gray-200 p-4 relative" id={id}>
 			{isEditing && (
 				<button
 					className="absolute top-2 right-2 text-gray-500 hover:text-red-500"
